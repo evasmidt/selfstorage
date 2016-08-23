@@ -1,0 +1,223 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*background-color: yellow;*/
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.main_wrapper {
+	/*border: 1px solid red;*/
+}
+
+.main_content_container {
+	padding: 0 1em;
+
+}
+.header_main {
+	border: 1px solid blue;
+	margin: 0;
+	text-align: center;
+	background-color: #007ac3;
+	overflow: auto;
+
+}
+
+.main_logo {
+	width: 40%;
+}
+
+.nav_primary {
+	margin: 0 auto;	
+
+}
+.nav_primary ul {
+	padding: 0;
+}
+.nav_primary li {
+	display: block;
+
+	/*text-align: center;*/
+
+
+}
+
+.nav_primary li a {
+	text-decoration: none;
+	color: white;
+}
+
+.home_block {
+
+	width: 100%;
+	text-align: center;
+	margin: 2em 0;
+	padding-bottom: 2em;
+	overflow: auto;
+}
+
+
+.home_main_banner {
+	background-image: url('../images/back2school-1420.jpg');
+	margin-top: 0;
+	height: 500px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+.home_main_header{
+	margin-top: 15%;
+	color: white;
+	padding: 0 1em;
+}
+
+.home_intro_text {
+	color: white;
+	padding: 0 1em;
+}
+
+.home_block_4-col {
+	text-align: center;
+	padding: 0 1.5em;
+	overflow: auto;
+}
+
+.home_block_col {
+	width: 100%;
+	text-align: center;
+	padding: 1em;
+}
+
+.cta {
+	text-decoration: none;
+	color: white;
+}
+
+
+.cta:hover {
+	color: #ef3e34;
+}
+
+
+
+.clearfix {
+	clear:both;
+}
+
+.main_footer {
+	background-color: #007ac3;
+	font-size: 1.5em;
+	overflow: auto;
+	text-align: center;
+	color: white;
+}
+
+
+.main_footer a {
+	text-decoration: none;
+	color: white;
+}
+
+.main_footer a:hover {
+	color: #ef3e34;
+}
+
+
+.footer_text_left {
+	width: 100%;
+	/*border: 1px solid #ef3e34;*/
+}
+
+.footer_text_center {
+	width: 100%;
+	/*border: 1px solid #ef3e34;*/
+}
+
+.footer_links {
+	font-size: .95em;
+}
+
+.footer_links li {
+	display: block;
+	margin-bottom: .6em;	
+}
+
+@media (min-width: 769px){
+	.main_content_container {
+		width: 75%;
+		margin: 0 auto;
+		max-width: 1000px;
+		}
+
+		.main_logo {
+		float: left;
+		width: 25%;
+		}
+
+	.nav_primary {
+		float: right;
+		margin-top: 1.3em;
+		margin-bottom: 2em;
+	}
+
+	.nav_primary li {
+		display: inline-block;
+		padding: 1em;
+	}
+
+	.home_block_4-col {
+		text-align: left;
+		padding: 0 1.5em;
+		overflow: auto;
+	}
+
+	.home_block_col {
+		width: 50%;
+		float: left;
+	}
+
+	.home_block_icon {
+		font-size: 2em;
+		margin: 1em;
+	}
+
+	.footer_text_left {
+		float: left;
+		width: 25%;
+		display: inline-block;
+		margin-left: 2em;
+	}
+
+	.footer_text_center {
+		float: left;
+		width: 30%;
+	}
+
+
+
+	.footer_links li {
+		display: inline-block;
+		padding: .25em; 
+		float: right;
+		margin-right: 2em;
+	}
+
+
+}
+
+
+
+@media (min-width: 900px){
+		
+.home_block_4-col {
+		text-align: center;
+	}
+
+		.home_block_col {
+		width: 25%;
+		float: left;
+	}
+}

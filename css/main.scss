@@ -1,0 +1,289 @@
+//Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic,700);
+
+$heading-fontfam: 'Montserrat', Arial, sans-serif;
+$mainbody-fontfam: 'Source Sans Pro', sans-serif;
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-family: $mainbody-fontfam;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $heading-fontfam;
+}
+
+
+.main_wrapper {
+	/*border: 1px solid red;*/
+}
+
+.main_content_container {
+	padding: 0 1em;
+
+}
+.header_main {	
+	margin: 0;
+	text-align: center;
+	background-color: #007ac3;
+	overflow: auto;
+		.logo {
+		width: 30%;
+		float: left;
+	    padding-left: 3em;
+		}
+		h1 { 
+		   margin-bottom: 0;
+		   margin-left: 0;
+		   margin-right: 0;
+		   padding: 0;
+		   color: white;
+		   font-size: 2.5em;
+		   text-transform: uppercase;
+		   font-family: Arial, sans-serif;
+		   &:after {
+		   content: "";
+		   border-bottom: 4.5px solid red;
+		   }
+		  border-bottom: 4.5px solid red; 
+		   }
+
+		h2 {
+			color: white;
+			margin-top: 5px;
+			font-size: 2em;
+			text-transform: uppercase;
+			font-family: Arial, sans-serif;
+		}
+
+}
+
+.main_logo {
+	width: 30%;
+}
+
+.nav_primary {
+	margin: 0 auto;	
+	padding-right: 3em;
+		ul {
+			padding: 0;
+		}
+		li {
+			display: block;
+			font-size: 1.4em;
+			font-family: $heading-fontfam;
+				a {
+					text-decoration: none;
+					color: white;
+				}
+				:hover {
+					color: #ef3e34;
+					padding-bottom: .7em;
+					border-bottom: 1px solid #ef3e34;
+				}
+		}
+}
+
+
+.home_block {
+	width: 100%;
+	text-align: center;
+	margin: 2em 0;
+	padding-bottom: 2em;
+	overflow: auto;
+	font-family: $mainbody-fontfam;
+}
+
+
+.home_main_banner {
+	background-image: url('../images/back2school-1420.jpg');
+	margin-top: 0;
+	height: 500px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.home_main_header{
+	margin-top: 15%;
+	color: white;
+	padding: 0 1em;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+}
+
+.home_intro_text {
+	color: white;
+	padding: 0 1em;
+	font-size: 1.4em;
+	margin-bottom: 3em;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+}
+
+.home_block_4-col {
+	text-align: center;
+	padding: 0 1.5em;
+	overflow: auto;
+}
+
+.home_block_col {
+	width: 100%;
+	text-align: center;
+	padding: 1em;
+}
+
+	.cta {
+		text-decoration: none;
+		color: white;
+		background-color: #007ac3;
+		border-radius: 10px;
+		padding: 1.5em;
+		margin: 2em;
+	
+		&:hover {
+			background-color: lighten( #007ac3, 10% );
+		}
+}
+
+
+
+.clearfix {
+	clear:both;
+}
+
+.main_footer {
+	background-color: #007ac3;
+	font-size: 1.5em;
+	overflow: auto;
+	text-align: center;
+	color: white;
+		a {
+			text-decoration: none;
+			color: white;
+				:hover {
+					color: #ef3e34;
+				}
+		}
+}
+
+
+.footer_text_left {
+	width: 100%;
+}
+
+.footer_text_center {
+	width: 100%;
+}
+
+
+
+@media (min-width: 769px){
+	.main_content_container {
+		width: 75%;
+		margin: 0 auto;
+		max-width: 1000px;
+		}
+		.main_logo {
+		float: left;
+		width: 25%;
+		}
+
+	.nav_primary {
+		float: right;
+		margin-top: 1.3em;
+		margin-bottom: 2em;
+	}
+
+	.nav_primary li {
+		display: inline-block;
+		padding: 1em;
+	}
+
+	.home_block_4-col {
+		text-align: left;
+		padding: 0 1.5em;
+		overflow: auto;
+			@media (min-width: 900px){
+				text-align: center;
+			}
+	}
+	.home_block {
+		.col {
+			width: 50%;
+			float: left;
+
+			@media (min-width: 900px){
+				width: 25%;
+				float: left;
+			}
+		}
+		.icon {
+			font-size: 2.2em;
+			margin: 1em;
+		}
+
+	}
+	
+
+
+
+	/*.footer_text_left {
+		float: left;
+		width: 25%;
+		display: inline-block;
+		margin-left: 2em;
+		img {
+			width: 30%;
+		}
+	}*/
+
+	.footer_text_center {
+		text-align: center;
+			h4 {
+				margin-bottom: .3em;
+			}
+			h5 {
+				margin-bottom: .3em;
+			}
+			p {
+				font-size: .75em;
+				margin: 0.3em;
+			}
+			ul {
+			margin: 0;
+			padding: 0;
+			}
+			li {
+				text-align: center;
+				display: inline-block;
+				padding: .25em; 
+				font-size: 1.25em;
+			}
+	}
+
+
+
+	.footer_links {
+		font-family: sans-serif;
+			li {
+			display: inline-block;
+			padding: .25em; 
+			float: right;
+			margin-right: 2em;
+			
+			font-size: .75em;	
+			}
+	}
+
+
+}
