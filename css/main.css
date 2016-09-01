@@ -66,6 +66,9 @@ h1, h2, h3, h4, h5 {
       color: #ef3e34;
       padding-bottom: .7em;
       border-bottom: 1px solid #ef3e34; }
+  @media (min-width: 700px) {
+    .nav_primary {
+      float: right; } }
 
 .home_block {
   width: 100%;
